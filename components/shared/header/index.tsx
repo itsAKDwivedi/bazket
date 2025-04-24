@@ -1,17 +1,19 @@
 import { APP_NAME } from "@/lib/constants"
-import { Menu, MenuIcon, Search } from "lucide-react"
+import {MenuIcon} from "lucide-react"
+import Search from "./search"
+import Menu from "./menu"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import Link from "next/link"
 import data from "@/lib/data"
 export default function Header() {
   return (
-    <header className="bg-black text-white">
+    <header className="bg-lime-950 text-white">
         <div className="px-2">
             <div className="flex items-center justify-between">
                 <div className="flex items-center">
                     <Link href="/" className="flex items-center header-button font-extrabold text-2xl m-1">
-                        <Image src="/icons/logo.svg" alt={`${APP_NAME} Logo`} width={40} height={40}/>
+                        <Image src="/icons/logo.svg" alt={`${APP_NAME} Logo`} width={50} height={50}/>
                         {APP_NAME}
                     </Link>
                 </div>
@@ -24,7 +26,7 @@ export default function Header() {
                 <Search />
             </div>
         </div>
-        <div className="flex items-center px-3 mb-[1px] bg-gray-800">
+        <div className="flex items-center px-3 mb-[1px] bg-lime-900">
             <Button variant = 'ghost' className="header-button flex items-center gap-1 text-base [&_svg]:size-6">
                 <MenuIcon /> All
             </Button>
