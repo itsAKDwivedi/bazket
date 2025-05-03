@@ -8,7 +8,7 @@ import Link from "next/link"
 import data from "@/lib/data"
 export default function Header() {
   return (
-    <header className="bg-lime-950 text-white">
+    <header className="bg-neutral-950 text-white">
         <div className="px-2">
             <div className="flex items-center justify-between">
                 <div className="flex items-center">
@@ -26,7 +26,7 @@ export default function Header() {
                 <Search />
             </div>
         </div>
-        <div className="flex items-center px-3 mb-[1px] bg-lime-900">
+        <div className="flex items-center px-3 mb-[1px] bg-neutral-700">
             <Button variant = 'ghost' className="header-button flex items-center gap-1 text-base [&_svg]:size-6">
                 <MenuIcon /> All
             </Button>

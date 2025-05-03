@@ -6,9 +6,9 @@ import { APP_NAME } from '@/lib/constants'
 
 export default function Footer() {
     return (
-        <footer className="bg-lime-950 text-white underline-link">
+        <footer className="bg-neutral-950 text-white underline-link">
             <div className="w-full">
-                <Button variant="ghost" className="bg-lime-900 w-full rounded-none" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
+                <Button variant="ghost" className="bg-neutral-700 w-full rounded-none" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
                     <CircleChevronUp className="mr-2 h-6 w-6" /> Back to Top
                 </Button>
             </div>
